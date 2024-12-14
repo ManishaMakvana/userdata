@@ -94,9 +94,25 @@ input[type="submit"]:first-child:hover {
     
     <!-- Form for inserting data -->
    
-
+<h3>insert data</h3>
     
     <!-- Form for updating or deleting data -->
+    <form action="form.php" method="post">
+       
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname"><br>
+
+        <input type="submit" value="Insert" ><br>
+        
+        
+    </form>
+
+
+
+    <h3>update & delete data</h3>
     <form action="form.php" method="post">
         <label for="id">ID:</label>
         <input type="text" id="id" name="id" required><br>
@@ -106,9 +122,7 @@ input[type="submit"]:first-child:hover {
         
         <label for="surname">Surname:</label>
         <input type="text" id="surname" name="surname"><br>
-
-        <input type="submit" value="Insert" ><br>
-        
+ 
         <input type="submit" name="update" value="Update"><br>
         <input type="submit" name="delete" value="Delete">
     </form>
